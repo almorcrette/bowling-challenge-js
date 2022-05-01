@@ -8,9 +8,9 @@ class Game {
 
   playFrame(frameNumber) {
     let frame = new Frame(frameNumber);
-    frame = frame.firstPlay;
+    frame = frame.firstPlay();
     this.updateScoresheet(frame);
-    return this.scoresheet;
+    return this.scoresheet
   };
 
   updateScoresheet(frame) {
