@@ -1,7 +1,12 @@
+//Running this script with line 9 console logs, and rl.close ok,
+// so getInput seems to work to take input
+// but if you comment out line 10, and uncomment line 12, we get error
+// raises ypeError: Cannot read properties of undefined (reading 'then')
+
 const Frame = require('./Frame')
 
-frame = new Frame();
+let frame = new Frame();
 
-// frame.userInput();
+frame.getInput();
 
-frame.firstPlay(); //running this doesn't work as it doesn't wait for the input. How to open up there for input?
+// frame.playRoll('firstRoll', frame.knockAndLog);
